@@ -1,11 +1,11 @@
 Summary:	PostgreSQL driver and tools library
 Name:		python3-py-postgresql
-Version:	1.0.0
+Version:	1.0.2
 Release:	1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://python.projects.postgresql.org/files/py-postgresql-%{version}.tar.gz
-# Source0-md5:	84e3fd8feda35bf60191d276cfebcd2b
+# Source0-md5:	12c7ef62c78c9466a7fdd7fa985890e1
 URL:		http://python.projects.postgresql.org/
 BuildRequires:	python3-devel
 BuildRequires:	python3-modules
