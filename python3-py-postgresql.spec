@@ -1,7 +1,7 @@
 Summary:	PostgreSQL driver and tools library
 Name:		python3-py-postgresql
 Version:	1.0.4
-Release:	7
+Release:	8
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://python.projects.postgresql.org/files/py-postgresql-%{version}.tar.gz
@@ -23,13 +23,11 @@ various parts of PostgreSQL. Notably, it provides a pure-Python driver
 %setup -q -n py-postgresql-%{version}
 
 %build
-python3 -- setup.py build
+%py3_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python3 -- setup.py install \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py3_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
